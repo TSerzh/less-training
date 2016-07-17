@@ -1,0 +1,35 @@
+@import "_varibles";
+@import "_styles";
+
+@imgUrl: "../img";
+body {
+  //background: url("@{imgUrl}/pic.png");
+  background: @bg-main;
+}
+.content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .container();
+  .main {
+    .make-row();
+  }
+}
+
+.one{
+  .make-xs-column(3);
+}
+.two {
+  .make-xs-column(5);
+}
+.sidebar {
+  .make-xs-column(4);
+
+  .form {
+    & > div {
+      .form-group();
+      input {
+        .form-control();
+      }
+    }
+  }
+}
