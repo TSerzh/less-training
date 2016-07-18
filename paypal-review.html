@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="app/css/main.css">
+</head>
+
+<body>
+	<div id="maincontent" class="main-container container">
+	<a id="contentarea" name="contentarea" tabindex="-1"></a>
+	<div class="page-title-wrapper">
+		<h1 class="page-title">
+			<span class="base" data-ui-id="page-title-wrapper">Review Order #12121212</span>
+		</h1>
+	</div>
+	<div class="page messages">
+		<div data-placeholder="messages"></div>
+		<div data-bind="scope: 'messages'">
+			<div data-bind="foreach: { data: messages().messages, as: 'message' }" class="messages"></div>
+		</div>
+
+	</div>
+
+	<div class="row">
+		<div class="main col-xs-12">
+			<input name="form_key" type="hidden" value="B1be76nYow6c4ntG">
+			<div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
+				<script>
+					window.authenticationPopup = {"customerRegisterUrl":"http:\/\/grandwesternsteaks.loc\/customer\/account\/create\/","customerForgotPasswordUrl":"http:\/\/grandwesternsteaks.loc\/customer\/account\/forgotpassword\/","baseUrl":"http:\/\/grandwesternsteaks.loc\/"};
+				</script>
+				<!-- ko template: getTemplate() -->
+
+
+
+				<!-- /ko -->
+			</div>
+
+
+			<div class="paypal-review view">
+				<div class="block block-order-details-view">
+					<div class="block-content">
+						<div class="box box-order-shipping-method">
+							<strong class="box-title">
+								<span>Shipping Method</span>
+							</strong>
+							<div class="box-content">
+								<form method="post" id="shipping-method-form" action="http://grandwesternsteaks.loc/paypal/express/saveShippingMethod/" class="form">
+									<p>
+										Fixed - <span class="price">$25.00</span>                                </p>
+								</form>
+							</div>
+						</div>
+						<div class="box box-order-shipping-address">
+							<strong class="box-title">
+								<span>Shipping Address</span>
+							</strong>
+							<div class="box-content">
+								<address>
+									Serge Douglas<br>
+
+									10th Street NW<br>
+									10<br>
+
+
+									Atlanta,  Georgia, 30309<br>
+									United States<br>
+									T: +1 404-487-9000
+
+								</address>
+							</div>
+						</div>
+						<div class="box box-order-billing-address">
+							<strong class="box-title"><span>Payment Method</span></strong>
+							<div class="box-content">
+								test<br>
+								aws.tsarev@gmail.com <br>
+
+								<img src="http://grandwesternsteaks.loc/pub/static/frontend/Aws/grandwesternsteaks/en_US/images/logo-paypal.png" alt="Buy now with PayPal">
+							</div>
+							<div class="box-actions">
+								<a href="http://grandwesternsteaks.loc/paypal/express/edit/" class="action edit">
+									<span>Edit Payment Information</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="paypal-review-discount">
+					<div class="block discount" id="block-discount" data-collapsible="true" role="tablist">
+						<div class="title" data-role="title" role="tab" aria-selected="false" aria-expanded="false" tabindex="0">
+							<strong id="block-discount-heading" role="heading" aria-level="2">Apply Discount Code</strong>
+						</div>
+						<div class="content" data-role="content" aria-labelledby="block-discount-heading" role="tabpanel" aria-hidden="true" style="display: none;">
+							<form id="discount-coupon-form" action="http://grandwesternsteaks.loc/checkout/cart/couponPost/" method="post">
+								<div class="fieldset coupon input-group">
+									<input type="hidden" name="remove" id="remove-coupon" value="0">
+									<input type="text" class="input-text form-control" id="coupon_code" name="coupon_code" value="" placeholder="Enter discount code">
+									<div class="actions-toolbar input-group-btn">
+										<button class="action apply btn btn-info type=" button"="" value="Apply Discount">
+										<span>Apply Discount</span>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="paypal-review-items">
+					<div class="paypal-review-title">
+						<strong>Items in Your Shopping Cart</strong>
+						<a href="http://grandwesternsteaks.loc/checkout/cart/" class="action edit">
+							<span>Edit Shopping Cart</span>
+						</a>
+					</div>
+
+					<div id="details-reload" class="table-wrapper order-items cart">
+						<table id="details-table" class="cart items data table table-paypal-review-items">
+							<caption class="table-caption">Items in Your Shopping Cart</caption>
+							<thead>
+							<tr>
+								<th class="col name" scope="col">Item</th>
+								<th class="col price" scope="col">Price</th>
+								<th class="col qty" scope="col">Qty</th>
+								<th class="col subtotal" scope="col">Subtotal</th>
+							</tr>
+							</thead>
+							<tbody class="cart item">
+							<tr>
+								<td class="col item" data-th="Product Name">
+            <span class="product-item-photo">
+
+<div class="product-image-container">
+	<div class="product-image-wrapper">
+        <span class="img-w">
+            <span class="img-in">
+                <img class="product-image-photo" src="http://grandwesternsteaks.loc/pub/static/frontend/Aws/grandwesternsteaks/en_US/Magento_Catalog/images/product/placeholder/small_image.jpg" alt="FILET MIGNON">
+            </span>
+        </span>
+	</div>
+</div>
+
+				<!--
+				width="135"
+									 height="135"
+									 -->
+            </span>
+									<div class="product-item-details">
+										<strong class="product name product-item-name">FILET MIGNON</strong>
+									</div>
+								</td>
+								<td class="col price" data-th="Price">
+                                        <span class="price-excluding-tax" data-label="Excl. Tax">
+                        <span class="cart-price">
+
+<span class="price">$180.00</span>    </span>
+
+                </span>
+								</td>
+								<td class="col qty" data-th="Qty"><span class="qty">5</span></td>
+								<td class="col subtotal" data-th="Subtotal">
+                                        <span class="price-excluding-tax" data-label="Excl. Tax">
+                        <span class="cart-price">
+<span class="price">$900.00</span>    </span>
+
+                </span>
+								</td>
+							</tr>
+							</tbody>
+							<tbody class="cart item">
+							<tr>
+								<td class="col item" data-th="Product Name">
+            <span class="product-item-photo">
+
+<div class="product-image-container">
+	<div class="product-image-wrapper">
+        <span class="img-w">
+            <span class="img-in">
+                <img class="product-image-photo" src="http://grandwesternsteaks.loc/pub/static/frontend/Aws/grandwesternsteaks/en_US/Magento_Catalog/images/product/placeholder/small_image.jpg" alt="Ahi Tuna Steaks 8 oz.">
+            </span>
+        </span>
+	</div>
+</div>
+
+				<!--
+				width="135"
+									 height="135"
+									 -->
+            </span>
+									<div class="product-item-details">
+										<strong class="product name product-item-name">Ahi Tuna Steaks 8 oz.</strong>
+									</div>
+								</td>
+								<td class="col price" data-th="Price">
+                                        <span class="price-excluding-tax" data-label="Excl. Tax">
+                        <span class="cart-price">
+
+<span class="price">$77.00</span>    </span>
+
+                </span>
+								</td>
+								<td class="col qty" data-th="Qty"><span class="qty">1</span></td>
+								<td class="col subtotal" data-th="Subtotal">
+                                        <span class="price-excluding-tax" data-label="Excl. Tax">
+                        <span class="cart-price">
+<span class="price">$77.00</span>    </span>
+
+                </span>
+								</td>
+							</tr>
+							</tbody>
+							<tfoot>
+							<tr class="totals sub">
+								<th style="" class="mark" colspan="3" scope="row">
+									Subtotal    </th>
+								<td style="" class="amount" data-th="Subtotal">
+									<span class="price">$977.00</span>    </td>
+							</tr>
+							<tr class="totals shipping excl">
+								<th style="" class="mark" colspan="3" scope="row">
+									Shipping &amp; Handling (Flat Rate - Fixed)        </th>
+								<td style="" class="amount" data-th="Shipping &amp; Handling (Flat Rate - Fixed)">
+									<span class="price">$25.00</span>        </td>
+							</tr>
+
+
+							<tr class="totals-tax">
+								<th style="" class="mark" colspan="3" scope="row">
+									Tax            </th>
+								<td style="" class="amount" data-th="Tax">
+									<span class="price">$0.00</span>    </td>
+							</tr>
+
+							<tr class="grand totals">
+								<th style="" class="mark" colspan="3" scope="row">
+									<strong>Grand Total</strong>
+								</th>
+								<td style="" class="amount" data-th="Grand Total">
+									<strong><span class="price">$1,002.00</span></strong>
+								</td>
+							</tr>
+							</tfoot>
+						</table>
+					</div>
+
+					<form method="post" id="order-review-form" action="http://grandwesternsteaks.loc/paypal/express/placeOrder/" class="form" novalidate="novalidate">
+						<div class="actions-toolbar" id="review-buttons-container">
+							<div class="primary">
+								<button type="button" id="review-button" class="action checkout primary" value="Place Order" style="opacity: 1;">
+									<span>Place Order</span>
+								</button>
+								<button type="button" id="review-submit" class="action checkout primary" value="Place Order" style="display: none;">
+									<span>Place Order</span>
+								</button>
+							</div>
+                <span class="please-wait load indicator" id="review-please-wait" style="display: none;" data-text="Submitting order information...">
+                   <span>Submitting order information...</span>
+                </span>
+						</div>
+					</form>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
+

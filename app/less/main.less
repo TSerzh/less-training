@@ -1,35 +1,53 @@
 @import "_varibles";
+@import "_mixin";
 @import "_styles";
 
 @imgUrl: "../img";
 body {
-  //background: url("@{imgUrl}/pic.png");
   background: @bg-main;
+  //padding-top: 70px;
 }
-.content {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  .container();
-  .main {
-    .make-row();
+.navbar {
+  &.navbar-default {
+    background: #69c;
   }
 }
+.content {
+  .container();
 
-.one{
-  .make-xs-column(3);
-}
-.two {
-  .make-xs-column(5);
-}
-.sidebar {
-  .make-xs-column(4);
+  //padding-top: 20px;
+  //padding-bottom: 20px;
 
-  .form {
-    & > div {
-      .form-group();
-      input {
-        .form-control();
+  .main {
+    .make-row();
+    h1 {
+      .make-xs-column(12);
+    }
+  }
+
+  .one{
+    .make-xs-column(3);
+  }
+  .two {
+    .make-xs-column(5);
+    hr {
+      .nav-divider(orange);
+    }
+  }
+  .sidebar {
+    .make-xs-column(4);
+
+    .form {
+      & > div {
+        .form-group();
+        input {
+          .form-control();
+        }
+        input[type=number] {
+          .lib-form-element-number-reset();
+        }
       }
     }
   }
 }
+

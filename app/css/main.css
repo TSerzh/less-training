@@ -7286,11 +7286,12 @@ fieldset[disabled] .btn-danger.active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 body {
-  background: #e5e5e5;
+  background: #e8e8e1;
+}
+.navbar.navbar-default {
+  background: #69c;
 }
 .content {
-  padding-top: 20px;
-  padding-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -7327,7 +7328,15 @@ body {
   margin-left: -15px;
   margin-right: -15px;
 }
-.one {
+.content .main h1 {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.content .one {
   position: relative;
   float: left;
   width: 25%;
@@ -7335,7 +7344,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-.two {
+.content .two {
   position: relative;
   float: left;
   width: 41.66666667%;
@@ -7343,7 +7352,13 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-.sidebar {
+.content .two hr {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: orange;
+}
+.content .sidebar {
   position: relative;
   float: left;
   width: 33.33333333%;
@@ -7351,10 +7366,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-.sidebar .form > div {
+.content .sidebar .form > div {
   margin-bottom: 15px;
 }
-.sidebar .form > div input {
+.content .sidebar .form > div input {
   display: block;
   width: 100%;
   height: 34px;
@@ -7372,36 +7387,44 @@ body {
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-.sidebar .form > div input:focus {
+.content .sidebar .form > div input:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-.sidebar .form > div input::-moz-placeholder {
+.content .sidebar .form > div input::-moz-placeholder {
   color: #999;
   opacity: 1;
 }
-.sidebar .form > div input:-ms-input-placeholder {
+.content .sidebar .form > div input:-ms-input-placeholder {
   color: #999;
 }
-.sidebar .form > div input::-webkit-input-placeholder {
+.content .sidebar .form > div input::-webkit-input-placeholder {
   color: #999;
 }
-.sidebar .form > div input::-ms-expand {
+.content .sidebar .form > div input::-ms-expand {
   border: 0;
   background-color: transparent;
 }
-.sidebar .form > div input[disabled],
-.sidebar .form > div input[readonly],
-fieldset[disabled] .sidebar .form > div input {
+.content .sidebar .form > div input[disabled],
+.content .sidebar .form > div input[readonly],
+fieldset[disabled] .content .sidebar .form > div input {
   background-color: #eeeeee;
   opacity: 1;
 }
-.sidebar .form > div input[disabled],
-fieldset[disabled] .sidebar .form > div input {
+.content .sidebar .form > div input[disabled],
+fieldset[disabled] .content .sidebar .form > div input {
   cursor: not-allowed;
 }
-textarea.sidebar .form > div input {
+textarea.content .sidebar .form > div input {
   height: auto;
+}
+.content .sidebar .form > div input[type=number] {
+  -moz-appearance: textfield;
+}
+.content .sidebar .form > div input[type=number]::-webkit-inner-spin-button,
+.content .sidebar .form > div input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
